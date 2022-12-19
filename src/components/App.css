@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 3rem !important;
+}
+.bg-darkxz {
+  background-color: rgba(0, 0, 0, 0.774) !important;
+}
+form {
+  margin-left: auto !important;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1rem;
+}
+
+.single-grid {
+  background: rgb(192, 192, 192);
+  text-align: center;
+  border-radius: 0.3rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+.card-text {
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+.btn3 {
+  display: inline-block;
+  padding: 1rem;
+  background: purple;
+  width: 100%;
+  text-align: center;
+}
+.arrow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid-4 {
+    grid-template-columns: repeat(1, auto);
+  }
+  .contentx {
+    margin: 0 10px;
+  }
+}
